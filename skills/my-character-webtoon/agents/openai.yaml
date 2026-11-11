@@ -1,0 +1,13 @@
+interface:
+  display_name: "내 캐릭터로 4컷 웹툰 만들기"
+  short_description: "완성한 내 캐릭터로 이야기와 대사가 있는 4컷 웹툰을 6단계로 만듭니다"
+  default_prompt: "$my-character-webtoon 스킬로 첨부한 캐릭터의 4컷 웹툰을 만들어줘. 먼저 1단계에서 이야기 3안을 추천하고 내 선택을 기다려줘."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  products:
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
+  allow_implicit_invocation: true
