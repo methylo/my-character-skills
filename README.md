@@ -1,13 +1,23 @@
 # 내 캐릭터 만들기 (my-character-skills)
 
-내 사진으로 캐리커처 캐릭터를 만들고, 그 캐릭터로 4컷 웹툰까지 완성하는 ChatGPT 스킬 두 개입니다. 파트1에서 만든 캐릭터 기본형을 파트2에 첨부해 이어서 씁니다.
+내 사진으로 캐리커처 캐릭터를 만들고, 그 캐릭터로 4컷 웹툰까지 완성하는 ChatGPT 스킬입니다. 이미지 생성까지 ChatGPT 안에서 진행합니다.
 
-## 두 스킬
+## 어떤 걸 받을까
 
-| 순서 | 스킬 | ChatGPT 표시 이름 | 하는 일 |
-|---|---|---|---|
-| 파트1 | `my-character` | 내 캐릭터 만들기 | 내 사진의 닮은 특징을 살려 더 멋지고 코믹한 상반신 캐리커처 기본형을 만듭니다. |
-| 파트2 | `my-character-webtoon` | 내 캐릭터로 4컷 웹툰 만들기 | 완성한 캐릭터 기본형으로 이야기와 대사가 있는 4컷 웹툰을 만듭니다. |
+같은 내용을 두 가지 방식으로 제공합니다. **둘 중 하나만** 등록하면 됩니다.
+
+| 방식 | 받을 파일 | 이런 경우에 |
+|---|---|---|
+| **통합본 (스킬 1개)** | `my-character-studio.zip` | 스킬 하나로 캐릭터부터 웹툰까지 이어서 만들고 싶을 때 |
+| **파트별 (스킬 2개)** | `my-character.zip` + `my-character-webtoon.zip` | 수업에서 파트1·파트2를 나눠 진행하거나, 한쪽만 쓰고 싶을 때 |
+
+| 스킬 | ChatGPT 표시 이름 | 하는 일 |
+|---|---|---|
+| `my-character-studio` | 내 캐릭터·웹툰 만들기 | 첨부한 자료를 보고 시작할 곳을 고릅니다. 사진이면 캐릭터 제작, 완성 캐릭터면 웹툰 제작, 사진부터 웹툰까지 요청하면 두 파트를 이어서 진행합니다. 진행 상태는 `캐릭터 1/4`, `웹툰 1/6`처럼 표시합니다. |
+| `my-character` (파트1) | 내 캐릭터 만들기 | 내 사진의 닮은 특징을 살려 더 멋지고 코믹한 상반신 캐리커처 기본형을 만듭니다. |
+| `my-character-webtoon` (파트2) | 내 캐릭터로 4컷 웹툰 만들기 | 완성한 캐릭터 기본형으로 이야기와 대사가 있는 4컷 웹툰을 만듭니다. |
+
+두 방식의 단계와 기준은 같습니다. 아래 단계 표는 둘 다에 해당합니다.
 
 ### 파트1 · 내 캐릭터 만들기 (4단계)
 
@@ -36,6 +46,16 @@
 ```text
 my-character-skills/
 ├── skills/
+│   ├── my-character-studio/        통합본
+│   │   ├── SKILL.md                시작 자료에 따라 파트를 고르는 안내
+│   │   ├── agents/openai.yaml
+│   │   ├── assets/icon.svg
+│   │   └── references/
+│   │       ├── character-workflow.md   캐릭터 제작 4단계
+│   │       ├── webtoon-workflow.md     4컷 웹툰 제작 6단계
+│   │       ├── prompts.md
+│   │       ├── story-quality.md
+│   │       └── topics.md
 │   ├── my-character/
 │   │   ├── SKILL.md
 │   │   ├── agents/openai.yaml
@@ -49,20 +69,38 @@ my-character-skills/
 │           ├── story-quality.md    4컷 재미·품질 기준
 │           └── topics.md           주제 추천 자료
 └── downloads/
-    ├── my-character.zip            업로드용
-    └── my-character-webtoon.zip    업로드용
+    ├── my-character-studio.zip     업로드용 (통합본)
+    ├── my-character.zip            업로드용 (파트1)
+    └── my-character-webtoon.zip    업로드용 (파트2)
 ```
 
 ## ChatGPT에 등록하기
 
-1. 아래 zip 두 개를 내려받습니다.
-   - [my-character.zip](./downloads/my-character.zip?raw=1)
-   - [my-character-webtoon.zip](./downloads/my-character-webtoon.zip?raw=1)
-2. ChatGPT의 스킬 등록 화면에서 두 파일을 하나씩 올립니다.
+**통합본**: [my-character-studio.zip](./downloads/my-character-studio.zip?raw=1)을 내려받아 ChatGPT의 스킬 등록 화면에서 올립니다.
+
+**파트별**: 아래 두 파일을 내려받아 하나씩 올립니다.
+- [my-character.zip](./downloads/my-character.zip?raw=1)
+- [my-character-webtoon.zip](./downloads/my-character-webtoon.zip?raw=1)
 
 등록 화면의 위치와 명칭은 ChatGPT 버전과 요금제에 따라 다를 수 있습니다. 이미지 생성을 쓰므로 이미지 생성이 가능한 ChatGPT 환경이 필요합니다.
 
 ## 사용 방법
+
+### 통합본
+
+```
+my-character-studio 스킬로 첨부한 내 사진으로 캐릭터를 만들어줘. 콘셉트 3안부터 보여줘.
+```
+
+```
+my-character-studio 스킬로 첨부한 완성 캐릭터로 4컷 웹툰을 만들어줘. 주제와 이야기 3안부터 추천해줘.
+```
+
+```
+my-character-studio 스킬로 첨부한 내 사진에서 캐릭터를 만들고, 기본형을 확정한 뒤 4컷 웹툰까지 이어서 진행해줘.
+```
+
+### 파트별
 
 **파트1** — 내 사진을 첨부하고:
 
@@ -83,6 +121,7 @@ $my-character-webtoon 스킬로 첨부한 캐릭터의 4컷 웹툰을 만들어�
 - 본인 사진으로 진행합니다. 다른 사람의 사진은 그 사람의 동의를 받은 경우에만 씁니다.
 - 체형·피부색·나이·탈모·흉터는 과장하지 않도록 스킬에 정해 두었습니다.
 - 이 스킬은 ChatGPT의 이미지 생성 도구에 맞춰 작성되어 있습니다. 다른 서비스에서는 그대로 동작하지 않을 수 있습니다.
+- 통합본과 파트별 스킬을 함께 등록하면 같은 요청에 어느 스킬이 불릴지 헷갈릴 수 있습니다. 한 방식만 등록하세요.
 
 ## 라이선스
 

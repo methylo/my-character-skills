@@ -1,0 +1,14 @@
+interface:
+  display_name: 내 캐릭터·웹툰 만들기
+  short_description: 사진으로 캐릭터를 만들고 완성 캐릭터로 4컷 웹툰을 제작합니다
+  default_prompt: $my-character-studio 스킬로 내 캐릭터와 4컷 웹툰을 만들고 싶어. 첨부한 자료에 맞춰 첫 단계부터
+    진행해줘.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
