@@ -1,5 +1,9 @@
 # 내 캐릭터 만들기 (my-character-skills)
 
+> 책 〈클로드 스킬 가이드〉 — [예스24에서 보기](https://www.yes24.com/product/goods/199636519)
+>
+> 독자 단톡방 「AI 책쓰기: 집필의 기술」 — [카카오톡 오픈채팅 참여](https://open.kakao.com/o/ghqbvP0h)
+
 내 사진으로 캐리커처 캐릭터를 만들고, 그 캐릭터로 4컷 웹툰까지 완성하는 ChatGPT 스킬입니다. 이미지 생성까지 ChatGPT 안에서 진행합니다.
 
 ## 어떤 걸 받을까
